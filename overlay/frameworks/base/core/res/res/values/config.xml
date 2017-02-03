@@ -136,8 +136,6 @@
     <integer name="config_screenBrightnessDim">6</integer>
     <!-- Screen brightness when dozing. -->
     <integer name="config_screenBrightnessDoze">13</integer>
-    <!-- Whether the display blanks itself when going from a doze to a non-doze state -->
-    <bool name="config_displayBlanksAfterDoze">true</bool>
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
     <integer name="config_screenBrightnessSettingDefault">98</integer>
@@ -403,7 +401,7 @@
          Specify the component name or an empty string if none.
          Note that doze dreams are not subject to the same start conditions as ordinary dreams.
          Doze dreams will run whenever the power manager is in a dozing state. -->
-    <string name="config_dozeComponent" translatable="false">com.android.systemui/com.android.systemui.doze.DozeService</string>
+    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
 
     <!-- If this is true, device supports Sustained Performance Mode. -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
@@ -433,7 +431,7 @@
          to maximize power savings but not all devices support it.
          Refer to autosuspend.h for details.
     -->
-    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
+    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">false</bool>
 
     <!-- Power Management: Specifies whether to decouple the interactive state of the
          device from the display on/off state.
