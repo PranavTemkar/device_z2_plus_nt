@@ -155,10 +155,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
    libandroid_net
 
-# Lights
-PRODUCT_PACKAGES += \
-    lights.msm8996
-
 # GPS
 PRODUCT_PACKAGES += \
     libbatching \
