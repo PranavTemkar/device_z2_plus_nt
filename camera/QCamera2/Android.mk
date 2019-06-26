@@ -84,6 +84,9 @@ LOCAL_C_INCLUDES := \
         hardware/libhardware/include/hardware \
         hardware/qcom-caf/msm8996/media/libstagefrighthw \
         hardware/qcom-caf/msm8996/media/mm-core/inc \
+        hardware/qcom-caf/msm8996/display/libqdutils \
+        hardware/qcom-caf/msm8996/display/gralloc \
+        hardware/qcom-caf/msm8996/display/include \
         system/core/include/cutils \
         system/core/include/system \
         system/media/camera/include/system
