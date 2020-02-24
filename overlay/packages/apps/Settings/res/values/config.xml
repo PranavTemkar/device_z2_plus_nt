@@ -33,4 +33,7 @@
     <bool name="config_has_multi_color_led">false</bool>
 
     <bool name="config_enableManualSubProvisioning">true</bool>
+
+    <!-- Smart Charging enable -->
+    <bool name="config_supportSmartCharging">true</bool>
 </resources>
