@@ -33,4 +33,7 @@
     <bool name="config_has_multi_color_led">false</bool>
 
     <bool name="config_enableManualSubProvisioning">true</bool>
+
+    <!-- Ultra Power Saving -->
+    <bool name="config_supportUltraPowerSaving">false</bool>
 </resources>
