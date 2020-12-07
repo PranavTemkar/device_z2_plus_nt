@@ -46,6 +46,7 @@ PRIVATE_BUILD_DESC="z2_plus-user 7.0 NRD90M 2.5.412_170428 release-keys"
 
 # ArrowOS Properties
 DEVICE_MAINTAINER := PranavTemkar
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
