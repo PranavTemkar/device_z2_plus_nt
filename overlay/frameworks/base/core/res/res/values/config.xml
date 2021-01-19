@@ -682,4 +682,7 @@
           1: 2 button mode (back, home buttons + swipe up for overview)
           2: gestures only for back, home and overview -->
     <integer name="config_navBarInteractionMode">0</integer>
+
+    <!-- Set the default dialer package name. -->
+    <string name="config_defaultDialer" translatable="false">com.android.dialer</string>
 </resources>
