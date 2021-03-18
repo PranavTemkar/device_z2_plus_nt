@@ -15,27 +15,25 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from z2_plus device
 $(call inherit-product, device/zuk/z2_plus/device.mk)
 
-# Inherit some common AospExtended stuff.
-$(call inherit-product, vendor/nitrogen/products/common.mk)
+# Inherit some common MSM Xtended stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+# Official MSM-Xtended
+XTENDED_BUILD_TYPE := OFFICIAL
 
-PRODUCT_PACKAGE_OVERLAYS += device/zuk/z2_plus/overlay/packages/apps/CarrierConfig
+#Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.xtended.maintainer=🔥PranavTemkar🔥
 
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
-TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
-TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
-
-PRODUCT_NAME := nitrogen_z2_plus
+PRODUCT_NAME := xtended_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
