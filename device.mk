@@ -360,3 +360,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/hostapd.deny:system/etc/hostapd/hostapd.deny
 
 PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom/msm8996/kernel-headers
+
+# DEVICE QCOM COMMON
+$(call inherit-product-if-exists, device/qcom/common/common.mk)
+
+TARGET_COMMON_QTI_COMPONENTS += perf
