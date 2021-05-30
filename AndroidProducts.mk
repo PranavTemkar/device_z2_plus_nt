@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-$(LOCAL_DIR)/nitrogen_z2_plus.mk
+$(LOCAL_DIR)/reloaded_z2_plus.mk
+
+COMMON_LUNCH_CHOICES := \
+    reloaded_z2_plus-userdebug \
+    reloaded_z2_plus-user \
+    reloaded_z2_plus-eng
