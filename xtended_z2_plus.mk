@@ -20,10 +20,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from z2_plus device
 $(call inherit-product, device/zuk/z2_plus/device.mk)
 
-# Inherit some common Styx stuff.
-$(call inherit-product, vendor/styx/config/common.mk)
+# Inherit some common Xtended stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
-PRODUCT_NAME := styx_z2_plus
+PRODUCT_NAME := xtended_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
@@ -37,7 +37,20 @@ PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=z2_plus PRODUCT_NAME=z2_plus
 
 TARGET_VENDOR := zuk
 
-# Styx props
-STYX_BUILD_VARIANT := OFFICIAL
-TARGET_USES_HARDWARE_KEYS := true
-TARGET_GAPPS_ARCH := arm64
+# Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT="ZUK/z2_plus/z2_plus:7.0/NRD90M/2.5.412_170428:user/release-keys" \
+PRIVATE_BUILD_DESC="z2_plus-user 7.0 NRD90M 2.5.412_170428 release-keys"
+
+    BUILD_FINGERPRINT="ZUK/z2_plus/z2_plus:7.0/NRD90M/2.5.412_170428:user/release-keys" \
+
+# Official MSM-Xtended
+XTENDED_BUILD_TYPE := OFFICIAL
+
+#Maintainer
+XTENDED_BUILD_MAINTAINER := PranavTemkar
+XTENDED_BUILD_DONATE_URL := pranavtemkar-1@okaxis
+
+# Set Boot Animination Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+

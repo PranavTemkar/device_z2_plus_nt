@@ -1,0 +1,20 @@
+[
+  {
+    "remote": "github",
+    "repository": "Xtended-Devices/vendor_zuk_z2_plus",
+    "target_path": "vendor/zuk/z2_plus",
+    "revision": "xr"
+  },
+  {
+    "remote": "github",
+    "repository": "Xtended-Devices/kernel_zuk_msm8996",
+    "target_path": "kernel/zuk/msm8996",
+    "revision": "xr"
+  },
+  {
+    "remote": "github",
+    "repository": "kdrag0n/proton-clang",
+    "target_path": "prebuilts/clang/host/linux-x86/proton-clang",
+    "branch": "master"
+  }
+]
